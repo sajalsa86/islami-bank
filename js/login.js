@@ -14,7 +14,7 @@ document.getElementById('btn-submit').addEventListener('click', function () {
         window.location.href = 'bank.html';
     }
     else {
-        alert('Tui password vule gesos, tuke ami teijjo sobtan ghosona korlam');
+        alert('Tui password vule gesos vi sothik password de');
     }
 });
 
