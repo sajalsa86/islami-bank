@@ -1,35 +1,28 @@
-/* //step-1
+
+//step-1
 document.getElementById('withdraw-btn').addEventListener('click', function () {
     //step-2
-    const withdrawField = document.getElementById('withdraw-field');
-    const newWithdrawString = withdrawField.value;
-    const newWithdrawAmout = parseFloat(newWithdrawString);
-    //step-3
-    withdrawField.value = '';
+    const newWithdrawAmout = getUserInputFieldById('withdraw-field');
     //problem fix
     if (isNaN(newWithdrawAmout)) {
-        alert('Please Provide a valid number');
+        alert('Please Provide a valid Number');
         return;
     };
-    //step-4
-    const withdrawElement = document.getElementById('withdraw-element');
-    const previouWithdrawString = withdrawElement.innerText;
-    const previousWithdraw = parseFloat(previouWithdrawString);
-    //step-6
-    const balanceElement = document.getElementById('balance-element');
-    const previousBalancetString = balanceElement.innerText;
-    const previousBalance = parseFloat(previousBalancetString);
+    //step-3
+    const previousWithdraw = getTextElementValueByID('withdraw-element');
+
+    //step-5
+    const previousBalance = getTextElementValueByID('balance-element');
     //problem fix
     if (newWithdrawAmout > previousBalance) {
-        alert("You don't have Enough Balance");
+        alert("You don't have enough Balance");
         return;
     }
-    //step-5
+    //step-4
     const currentTotalWithdraw = previousWithdraw + newWithdrawAmout;
-    withdrawElement.innerText = currentTotalWithdraw;
-    //step-7
+    setTextElementValueById('withdraw-element', currentTotalWithdraw);
+
+    //step-6
     const remaingBlance = previousBalance - newWithdrawAmout;
-    balanceElement.innerText = remaingBlance;
-}); */
-
-
+    setTextElementValueById('balance-element', remaingBlance);
+});
