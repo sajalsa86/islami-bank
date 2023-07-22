@@ -1,4 +1,4 @@
-//step-1
+/* //step-1
 document.getElementById('deposit-btn').addEventListener('click', function () {
 
     //step-2
@@ -26,4 +26,5 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
     //step-7
     const remaingBlance = previousBalance + newDepositAmount;
     balanceElement.innerText = remaingBlance;
-});
+}); */
+

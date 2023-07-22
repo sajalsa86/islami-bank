@@ -1,4 +1,4 @@
-//step-1
+/* //step-1
 document.getElementById('withdraw-btn').addEventListener('click', function () {
     //step-2
     const withdrawField = document.getElementById('withdraw-field');
@@ -30,4 +30,6 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     //step-7
     const remaingBlance = previousBalance - newWithdrawAmout;
     balanceElement.innerText = remaingBlance;
-});
+}); */
+
+
